@@ -1,25 +1,3 @@
-// CONTADORES
-let numeros = document.querySelectorAll(".counter");
-
-numeros.forEach(numero => {
-
-    let valorFinal = Number(numero.dataset.target);
-    let valorAtual = 0;
-
-    let intervalo = setInterval(() => {
-
-        valorAtual++;
-
-        numero.innerText = valorAtual;
-
-        if(valorAtual >= valorFinal){
-            clearInterval(intervalo);
-        }
-
-    }, 30);
-
-});
-
 // BOTÃO VOLTAR AO TOPO
 let botaoTopo = document.getElementById("btnTopo");
 
